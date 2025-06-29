@@ -1,0 +1,87 @@
+# Formulário PHP: Envio e Recebimento de Dados via POST
+
+Este repositório contém uma aplicação simples desenvolvida em PHP que demonstra como enviar e receber dados de um formulário HTML utilizando o método POST. É um exemplo ideal para estudantes e iniciantes que desejam entender como o PHP processa formulários na prática.
+
+## Descrição
+
+O projeto está dividido em dois arquivos principais:
+
+- introducao.php: Apresenta o formulário com campos para nome, idade e curso.
+- receberValores.php: Processa os dados enviados via POST e exibe as informações na tela de forma organizada.
+
+## Estrutura dos Arquivos
+
+📂 formulario-php-post/
+├── introducao.php
+└── receberValores.php
+
+## introducao.php
+
+Este arquivo exibe um formulário HTML simples com os seguintes campos:
+
+- Nome (name="nome")
+- Idade (name="idade")
+- Curso (name="curso")
+
+Quando o usuário preenche os dados e clica em Enviar, os valores são enviados via método POST para o arquivo receberValores.php.
+
+Exemplo de formulário:
+
+<form action="receberValores.php" method="post">
+  <input type="text" name="nome" placeholder="Digite seu nome">
+  <input type="number" name="idade" placeholder="Digite sua idade">
+  <input type="text" name="curso" placeholder="Digite seu curso">
+  <input type="submit" value="Enviar">
+</form>
+
+## receberValores.php
+
+Este arquivo PHP recebe e processa os dados enviados pelo formulário anterior. Ele faz a leitura dos campos enviados por POST e os exibe formatadamente.
+
+Exemplo de saída esperada:
+
+Nome: Breno  
+Idade: 17  
+Curso: Desenvolvimento de Sistemas
+
+Você também pode adicionar validações, tratamentos de erro e até salvamento em banco de dados no futuro.
+
+## Como executar
+
+1. Clone este repositório:
+
+git clone https://github.com/BrenoAS/formulario-php-post.git
+cd formulario-php-post
+
+2. Execute em um servidor local PHP (como XAMPP, WAMP ou o próprio embutido do PHP):
+
+php -S localhost:8000
+
+3. Acesse no navegador:
+
+http://localhost:8000/introducao.php
+
+## Objetivo Educacional
+
+Este projeto serve para:
+
+- Entender a lógica de envio de formulários HTML.
+- Praticar como o PHP lida com requisições POST.
+- Aprender separação entre interface (HTML) e lógica (PHP).
+
+## Sugestões de Melhoria
+
+- Adicionar CSS para estilização do formulário.
+- Fazer validação dos campos.
+- Salvar os dados em um banco de dados MySQL.
+- Criar uma versão com método GET para comparação.
+
+## Autor
+
+Desenvolvido por Breno Arpojos de Souza  
+Estudante de Desenvolvimento de Sistemas (17 anos)  
+GitHub: https://github.com/BrenoAS
+
+## Licença
+
+Distribuído sob a Licença MIT. Veja LICENSE para mais informações.
